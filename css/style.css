@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+}
+
+/* Sectioning off components of the title card for positioning */
+.card1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card1_profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleblock1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dimensions for components */
+.card1_blurb {
+    padding: 0.75rem;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card1_blurb::after { /*Triangle trick for speech bubble*/
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 54px;
+    border-width: 12px 12px 0 12px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.card1_headshot {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 1rem;
+}
