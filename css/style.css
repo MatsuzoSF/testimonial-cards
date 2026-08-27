@@ -10,14 +10,20 @@ body {
 }
 
 /* Sectioning off components of the title card for positioning */
-.card1 {
+.card1, .card2 {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-.card1_profile {
+.card2 {
+    border: 2px solid black;
+    padding: 0.25rem;
+    border-radius: 15px;
+}
+
+.card1_profile, .card2_profile {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,8 +35,12 @@ body {
 }
 
 /* Dimensions for components */
-.card1_blurb {
+
+.card1_blurb, .card2_blurb {
     padding: 0.75rem;
+}
+
+.card1_blurb {
     background-color: black;
     color: white;
     border-radius: 15px;
@@ -47,7 +57,7 @@ body {
     border-color: black transparent transparent transparent;
 }
 
-.card1_headshot {
+.card1_headshot, .card2_headshot {
     width: 100px;
     height: 100px;
     object-fit: cover;
