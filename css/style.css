@@ -7,9 +7,15 @@
 body {
     font-family: sans-serif;
     display: flex;
+    flex-direction: column;
 }
 
-/* Sectioning off components of the title card for positioning */
+/* Sectioning off components of the title cards for positioning */
+.toprow {
+    display: flex;
+    flex-direction: row;
+}
+
 .card1, .card2 {
     width: 50%;
     display: flex;
@@ -23,15 +29,36 @@ body {
     border-radius: 15px;
 }
 
+.card3 {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .card1_profile, .card2_profile {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.card3_profile {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
 .titleblock1 {
     display: flex;
     flex-direction: column;
+}
+
+.titleblock3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Dimensions for components */
@@ -64,4 +91,12 @@ body {
     object-position: center;
     border-radius: 50%;
     margin: 1rem;
+}
+
+.card3_headshot {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
 }
