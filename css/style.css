@@ -47,7 +47,9 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 15px;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .titleblock1 {
@@ -55,13 +57,7 @@ body {
     flex-direction: column;
 }
 
-.titleblock3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Dimensions for components */
+/* Dimensions/attributes for components */
 
 .card1_blurb, .card2_blurb {
     padding: 0.75rem;
@@ -74,7 +70,7 @@ body {
     position: relative;
 }
 
-.card1_blurb::after { /*Triangle trick for speech bubble*/
+.card1_blurb::after { /*Triangle trick for speech bubble on card 1*/
     content: "";
     position: absolute;
     bottom: -12px;
@@ -99,4 +95,17 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 15px;
+}
+
+.name1, .name2, .name3 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.title1, .title2, .title3 {
+    white-space: nowrap;
+}
+
+.title3 {
+    color: darkgray;
 }
